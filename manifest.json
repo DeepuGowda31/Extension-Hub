@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Extension Hub",
+    "description": "Manage your Chrome extensions effortlessly with Extension Hub. Enable or disable extensions without interrupting your workflow.",
+    "version": "1.0",
+    "permissions": [
+        "management",
+        "storage",
+        "alarms"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "hub.png",
+            "48": "hub.png",
+            "128": "hub.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "hub.png",
+        "48": "hub.png",
+        "128": "hub.png"
+    }
+}

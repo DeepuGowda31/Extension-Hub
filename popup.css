@@ -1,0 +1,152 @@
+/* Add this to your popup.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Make the text bold */
+    color: #2196F3; /* Color of the title text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin: 0;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(to right, #2196F3, #00bcd4); /* Optional gradient background */
+    -webkit-background-clip: text; /* For webkit browsers */
+    -webkit-text-fill-color: transparent; /* For webkit browsers */
+    padding: 5px; /* Padding for better spacing */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    float: right;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+#search-bar {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#extensions, #extension-details {
+    margin-bottom: 10px;
+}
+
+.extension-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.extension-item img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.extension-item span {
+    flex-grow: 1;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.extension-item button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.extension-item button:hover {
+    background-color: #d32f2f;
+}
+
+#extension-details {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#extension-details button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#extension-details button:hover {
+    background-color: #d32f2f;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

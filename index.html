@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extension Hub</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>EXTENSION HUB</h1>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <input type="text" id="search-bar" placeholder="Search Extensions...">
+  <div id="extensions"></div>
+  <div id="extension-details" style="display: none;"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
